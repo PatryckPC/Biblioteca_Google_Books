@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lobby</title>
+    <link rel="stylesheet" href="../css/lobby.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../js/lobby.js"></script>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-6 offset-3 text-center">
+
+                <div id="userInfo" class="user-info">
+                    <p id="userEmail"></p>
+                </div>
+                <h1>AMLOTECA</h1>
+                
+                <div class="lobbyw"><button class="btn btn-primary" onclick="logout()">Logout</button>
+                </div>
+
+                <div class="buttons-container">
+                    <button class="btn btn-secondary" onclick="redirectTo('leyendo.html')">Leyendo</button>
+                    <button class="btn btn-secondary" onclick="redirectTo('favoritos.html')">Favoritos</button>
+                    <button class="btn btn-secondary" onclick="redirectTo('leidos.html')">Leídos</button>
+                    <button class="btn btn-secondary" onclick="redirectTo('porleer.html')">Por Leer</button>
+                </div>
+
+                
+                
+
+                <h2>Buscador de Libros</h2>
+
+                <div class="buscadorf">
+                    <form onsubmit="event.preventDefault();" role="search">
+                        <label for="search">Search for stuff</label>
+                        <input id="bookSearchInput" type="search" placeholder="Search..." autofocus required />
+                        <button class="btn btn-primary" onclick="search()">Go</button> 
+                        
+                      </form>
+
+                      <div id="searchResultsContainer"></div>
+                    </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

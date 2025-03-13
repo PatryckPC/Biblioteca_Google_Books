@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3ef;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ebe5dd;
+    padding: 20px;
+    border-radius: 10px;
+    
+}
+
+
+h1 {
+    color: #333;
+    text-align: center;
+
+}
+
+.user-info {
+    margin: 5px 0;
+    font-weight: bold; 
+    margin-left: 70%;
+    
+}
+
+
+.btn-primary {
+    background-color: #a9957d;
+    color: #000000;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.lobbyw {
+    text-align: right;
+}
+
+.btn-secondary {
+    background-color: #F5EFE7;
+    color: #4D4D4D;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.btn-secondary:hover {
+    color: #4D4D4D;
+    background-color: #f5e3cd; 
+}
+
+.buttons-container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center; 
+    background-color: #a9957d;
+    border-radius: 10px;
+}
+
+.buttons-container2 {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center; 
+    border-radius: 10px;
+}
+
+:root {
+
+  --dur: .3s;
+  --color-dark: #2f2f2f;
+  --color-light: #fff;
+  --color-brand: #57bd84;
+  --font-fam: 'Lato', sans-serif;
+
+  --btn-width: 6rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+
+}
+
+
+.buscadorf form {
+  position: relative;
+  width: 30rem;
+  background: var(--color-brand);
+  border-radius: var(--rad);
+  z-index: 0;
+  border-radius: 10px;
+}
+.buscadorf input, button {
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: 0;
+  color: var(--color-dark);
+  font-size: 1.8rem;
+  border-radius: 10px;
+}
+.buscadorf input[type="search"] {
+  width: 100%;
+  background: var(--color-light);
+  padding: 0 1.6rem;
+  border-radius: var(--rad);
+  appearance: none; 
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+  border-radius: 10px;
+  
+}
+.buscadorf button {
+  display: none; 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  background: var(--color-brand);
+  border-radius: 0 var(--rad) var(--rad) 0;
+  border-radius: 10px;
+}
+.buscadorf input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+  + button {
+    display: block;
+    border-radius: 10px;
+  }
+}
+.buscadorf label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+/* -------------------------------------------------------------------------*/
+/* TABLA DE RESULTADO DE BÚSQUEDA */
+.search-results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.search-results-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.search-results-table img {
+    max-width: 100px; /* Ajusta el tamaño de la imagen según sea necesario */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+/* -------------------------------------------------------------------------*/
+/* CUADRO FLOTANTE CUANDO DAS CLICK A UN LIBRO */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.book-details-modal {
+    background-color: #ebe5dd;
+    padding: 20px;
+    border-radius: 10px;
+    min-width: 70%;
+    max-width: 80%;
+    max-height: 80%;
+    overflow-y: auto;
+    z-index: 10;
+    
+}
+
+.book-details-modal button {
+    background-color: #C7B299;
+    border-radius: 10px;
+}
+
+
+.buttons-container {
+    margin-top: 20px;
+    text-align: center;
+}
+/* -------------------------------------------------------------------------*/
+/* CUADRO FLOTANTE CUANDO DAS CLICK A AGREGAR A LIBRERIA */
+.library-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.library-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.library-buttons button {
+    background-color: #675640;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.toast {
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #675640;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 2000;
+}

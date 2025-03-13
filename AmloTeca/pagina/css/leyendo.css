@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f3ef;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ebe5dd;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    color: #333;
+    
+}
+
+.book {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.book img {
+    width: 100px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.book-info {
+    flex-grow: 1;
+}
+
+.book-title {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.book-author {
+    font-size: 14px;
+    color: #777;
+}
